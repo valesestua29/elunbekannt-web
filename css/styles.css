@@ -1,0 +1,158 @@
+/* BOTONES DEL MENU */
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* TIPOGRAFIAS */ 
+
+@font-face {
+    font-family:probert-titulos;
+    src: url(../assets/Tipografias/Probert.otf);
+}
+
+@font-face {
+    font-family:probert-texto;
+    src: url(../assets/Tipografias/Probert\ Condensed.otf);
+}
+
+*{
+    margin:0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+/* ---- HEADER ----- */ 
+
+.abrir-menu, 
+.cerrar-menu{
+    display: none;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: #9b3df0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.logo1{
+    width: 2.1875rem;
+    margin-left: 100px;
+}
+
+.iconos-redes{
+    width: 25rem;
+}
+
+.iconos-redes a{
+    text-decoration: none;
+    padding: 5px;
+}
+
+.nav-bar{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1.40rem;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.nav-bar li{
+    margin: 0;
+    padding: 5px;
+}
+
+.nav-bar li a{
+    color:black;
+    font-family: probert-titulos;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+
+
+/* ---- FOOTER ----- */ 
+
+
+footer{
+    background-color: #9b3df0;
+    padding: 15px;
+}
+
+footer  p{
+    text-align: center;
+    color:black;
+    font-family: probert-texto;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* ---- BODY ----- */
+
+/* ---- PRESENTACION----- */
+
+body{
+    background-color: #191919;
+}
+
+.info-principal{
+    display: flex;
+}
+
+.info-principal div{
+    margin-top: 200px; 
+    margin-left: 40px;
+}
+
+.logo-principal{
+    width: 550px;
+}
+.foto-persona{
+    margin-top: 50px; 
+    margin-right: 40px;
+    width: 400px;
+}
+
+.info-principal div h1 {
+    color: #9b3df0;
+    font-family: probert-titulos;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.info-principal div h2{
+    color: #FFFFFF;
+    font-family: probert-texto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px 20px;
+    
+}
+
+
+/* ---- STREAM ----- */
+
+
+
+.stream h2{
+    color: white;
+    font-family: probert-titulos;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: left;
+    margin-left: 45px;
+}
+
+
+
