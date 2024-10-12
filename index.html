@@ -64,11 +64,11 @@
             <!-- STREAM -->
             
             <div>
-                <div class="stream">
+                <div class="stream-nombre">
                     <img> 
                     <h2 id="stream-elunbe"> /Elunbekannt </h2>
                 </div>
-                <div>
+                <div class="stream-video">
                     <iframe src="https://player.twitch.tv/?channel=elunbekannt&parent=localhost" 
                         frameborder="0" 
                         allowfullscreen="true" 
@@ -77,17 +77,62 @@
                         width="620">
                     </iframe>
                     <iframe
-                    id="chat_embed"
-                    src="https://www.twitch.tv/embed/elunbekannt/chat?parent=localhost"
-                    height="500"
-                    width="350">
+                        id="chat_embed"
+                        src="https://www.twitch.tv/embed/elunbekannt/chat?parent=localhost"
+                        height="500"
+                        width="350">
                     </iframe>
                 </div>
             </div>
+
+
+            
+
+
+
+
+            <!-- FORMULARIO -->
+            
+            <div id="contacto">
+                <h2> Contacto </h2>
+                <h3> ¡Trabajemos juntos! <br> 
+                    Envíame un mensaje y me voy a comunicar con vos en la mayor brevedad posible. </h3>
+                
+                <section class="contenedor">
+                    <form class="formulario" action="mail.php" method="POST">
+                        <p class="texto-cont">
+                            <label for="nombre">
+                                Nombre <br>
+                                <input type="text" id="name" name="name" required  placeholder="Ingrese su nombre">
+                            </label>
+                        </p>
+                        <p class="texto-cont"> 
+                            <label for="email">
+                                Correo electronico: <br>
+                                <input type="email" id="email" name="email" required placeholder="Ingrese su correo electronico">
+                            </label>
+                        </p>
+                        <p class="texto-cont"> 
+                            <label for="asunto">
+                                Asunto <br>
+                                <input type="text" id="subject" name="subject" required placeholder="Ingrese el asunto">
+                            </label>
+                        </p>
+                        <p class="texto-cont"> 
+                            <label for="comentario">
+                                Comentario <br> 
+                                <textarea id="message" name="message" rows="4" required placeholder="Escribe tu comentario"> </textarea>
+                            </label>
+                        </p>
+
+                        <input class="boton-enviar2" type="submit" value="Enviar">
+
+                    </form>
+
+                </section>
+                
+            </div>
         </body>
-
-
-
 
 
         <footer>

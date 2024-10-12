@@ -142,11 +142,11 @@ body{
 
 
 
-.stream h2{
+.stream-nombre h2{
     color: white;
     font-family: probert-titulos;
     font-weight: 200;
-    font-style: italic;
+    font-style: normal;
     font-size: 25px;
     text-decoration: none;
     padding: 10px 20px;
@@ -154,5 +154,87 @@ body{
     margin-left: 45px;
 }
 
+.stream-video{
+    display: flex;
+    justify-content:center;
+    
+    align-items: center;
+    margin: 10px 40px 10px 40px;
+}
 
+
+
+
+
+
+/* ---- FORMULARIO ---- */
+
+#contacto h2{
+    color: white;
+    font-family: probert-titulos;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: left;
+    margin-left: 45px;
+}
+
+#contacto h3{
+    color: white;
+    font-family: probert-texto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: left;
+    margin-left: 45px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+.formulario{
+    /*background-color: #9c3df04f;*/
+    padding: 20px;
+    width: 600px;
+    height: 550px;
+    margin-bottom: 100px;
+}
+
+.formulario p label input{
+    width: 550px;
+    height: 50px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.formulario p label textarea{
+    width: 550px;
+    height: 150px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.boton-enviar2 {
+    padding: 10px 25px;
+    float: right;
+    margin-right: 10px;
+}
+
+.formulario p label{
+    color: #FFFFFF;
+    font-family: probert-texto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+    text-decoration: none;
+}
 
