@@ -178,23 +178,25 @@ body{
 }
 
 .slide-container{
-    max-width: 1120px;
+    max-width: 70rem;
     width: 100%;
 }
 
 .slide-content{
-    margin: 0 40px;
+    margin: 0 2.5rem;
+    overflow: hidden;
+    border-radius: 25px;
 }
 
 .card{
-    width: 250px;
+    width: 15.625rem;
     border-radius: 10%;
     background-color: #FFFFFF;
     cursor: pointer;
     transition: all 0.3s ease;
-    padding-bottom: 5px;
-    margin-top: 25px;
-    margin-bottom: 70px;
+    padding-bottom: .3125rem;
+    margin-top: 1.5625rem;
+    margin-bottom: 4.375rem;
 }
 
 .image-content,
@@ -202,14 +204,14 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 14px;
+    padding: 0 .875rem;
 }
 
 
 .image-content{
     position: relative;
-    row-gap: 5px;
-    padding: 10px 0; 
+    row-gap: .3125rem;
+    padding: .625rem 0; 
 }
 
 .overlay{
@@ -219,7 +221,7 @@ body{
     height: 100%;
     width: 100%;
     background-color: #9b3df0;
-    border-radius: 25px 25px 0 25px ;
+    border-radius: 1.5625rem 1.5625rem 0 1.5625rem ;
 }
 
 .overlay::before,
@@ -227,25 +229,25 @@ body{
     content: '';
     position: absolute;
     right: 0;
-    bottom: -40px;
-    height: 40px;
-    width: 40px;
+    bottom: -2.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
     background-color: #9b3df0;
 }
 
 .overlay::after{
-    border-radius: 0 25px 0 0;
+    border-radius: 0 1.5625rem 0 0;
     background-color: #FFFFFF;
 }
 
 
 .card-image{
     position: relative;
-    height: 300px;
-    width: 300px;
+    height: 18.75rem;
+    width: 18.75rem;
     border-radius: 10%;
     background: #9b3df0;
-    padding: 10px;
+    padding: .625rem;
 }
 
 .card-image .card-img{
@@ -253,28 +255,56 @@ body{
     width: 100%;
     object-fit: cover;
     border-radius: 10%;
-    border: 4px solid #191919;
+    border: .25rem solid #191919;
 }
 
 .card-title{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 14px;
+    font-size: .875rem;
     font-weight: 500;
     color:#191919;
-    padding: 10px;
+    padding: .625rem;
 }
 
 .card-text{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: justify;
-    font-size: 11px;
+    font-size: .6875rem;
     font-weight: 500;
     color:#191919;
-    padding: 10px;
+    padding: .625rem;
 }
 
+.swiper-navBtn{
+    color: #9b3df0;
+    transition: color 0.3s ease;
+}
 
+.swiper-navBtn:hover{
+    color: #4e296e;
+}
 
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 40px;
+}
+
+.swiper-button-next{
+    right: 0;
+}
+
+.swiper-button-prev{
+    left: 0;
+}
+
+.swiper-pagination-bullet{
+    background-color:#9b3df0;
+    opacity:1;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #4e296e;
+}
 
 
 /* ---- FORMULARIO ---- */
@@ -347,4 +377,3 @@ body{
     font-size: 15px;
     text-decoration: none;
 }
-
