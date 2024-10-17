@@ -405,6 +405,135 @@ body{
 }
 
 
+
+
+@media (max-width: 768px){
+
+    .logo1{
+        margin-left: 15px;
+    }
+
+    .abrir-menu,
+    .cerrar-menu{
+        display: block;
+        justify-content: center;
+        padding: 5px;
+        border: 0;
+        font-size: 40px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+
+    .nav{
+        display: flex;
+        visibility: hidden;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #9b3df0;
+        box-shadow: #4e296e7a;
+    }
+
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-bar li{
+        padding: 15px;
+        margin-right: 45px;
+        display: flex;
+        align-content: center;
+    }
+
+    .iconos-redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+        justify-content: center; /* Centra los iconos horizontalmente */
+        gap: 10px; /* Controla el espacio entre los iconos */
+        align-items: center; 
+        
+    }
+
+    .iconos-redes a img{
+        width: 40px;
+    }
+
+
+
+    
+    /* ------ INICIO ------- */ 
+
+    .info-principal{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info-principal div{
+        margin-top: 150px;
+        margin-left: 0px;
+        padding: 0 10px;
+    }
+    
+    .logo-principal{
+        margin-left: 10px;
+        width: 300px;
+    }
+
+    .info-principal div h1 {
+        font-size: 18px;
+        text-align:left;
+    }
+
+    .info-principal div h2{
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .foto-persona{
+        margin: 45px auto;
+        width: 300px;
+    }
+
+
+    /* ------ STREAM ------- */ 
+
+    .box-stream-video {
+        height: 350px; 
+        width: 574px;
+    }
+    
+    .box-stream-chat{
+        height: 350px;
+        width: 250px;
+    }
+
+    
+    /* ------------ EVENTOS ----------- */
+
+    .slide-content{
+        margin: 0 55px;
+        overflow: hidden;
+        border-radius: 25px;
+    }
+
+
+}
+
 @media (max-width: 425px){
 
     
@@ -586,219 +715,3 @@ body{
 
 }
 
-
-@media (max-width: 768px){
-
-    .logo1{
-        margin-left: 15px;
-    }
-
-    .abrir-menu,
-    .cerrar-menu{
-        display: block;
-        justify-content: center;
-        padding: 5px;
-        border: 0;
-        font-size: 40px;
-        background-color: transparent;
-        cursor: pointer;
-    }
-
-
-    .nav{
-        display: flex;
-        visibility: hidden;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: #9b3df0;
-        box-shadow: #4e296e7a;
-    }
-
-    .nav.visible{
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .nav-bar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-bar li{
-        padding: 15px;
-        margin-right: 45px;
-        display: flex;
-        align-content: center;
-    }
-
-    .iconos-redes{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center; 
-        justify-content: center; /* Centra los iconos horizontalmente */
-        gap: 10px; /* Controla el espacio entre los iconos */
-        align-items: center; 
-        
-    }
-
-    .iconos-redes a img{
-        width: 40px;
-    }
-
-
-
-    
-    /* ------ INICIO ------- */ 
-
-    .info-principal{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .info-principal div{
-        margin-top: 150px;
-        margin-left: 0px;
-        padding: 0 10px;
-    }
-    
-    .logo-principal{
-        margin-left: 10px;
-        width: 300px;
-    }
-
-    .info-principal div h1 {
-        font-size: 18px;
-        text-align:left;
-    }
-
-    .info-principal div h2{
-        font-size: 14px;
-        text-align: justify;
-    }
-
-    .foto-persona{
-        margin: 45px auto;
-        width: 300px;
-    }
-
-
-    /* ------ STREAM ------- */ 
-
-    .box-stream-video {
-        height: 350px; 
-        width: 574px;
-    }
-    
-    .box-stream-chat{
-        height: 350px;
-        width: 250px;
-    }
-
-    
-    /* ------------ EVENTOS ----------- */
-
-    .slide-content{
-        margin: 0 55px;
-        overflow: hidden;
-        border-radius: 25px;
-    }
-
-
-}
-
-
-@media (max-width:1440px) {
-    
-    .logo-principal{
-        margin-left: 10px;
-        width: 600px;
-    }
-
-    .info-principal div h1 {
-        font-size: 35px;
-        text-align:left;
-    }
-
-    .info-principal div h2{
-        font-size: 25px;
-        text-align: justify;
-    }
-
-    .foto-persona{
-        margin: 45px auto;
-        width: 500px;
-    }
-
-    /* ------ STREAM ------- */ 
-
-    .stream-nombre h2{
-
-        font-size: 35px;
-        margin-bottom: 25px;
-
-    }
-
-    .box-stream-video {
-        height: 550px; 
-        width: 804px;
-    }
-    
-    .box-stream-chat{
-        height: 550px;
-        width: 350px;
-    }
-
-
-    /* ------------ EVENTOS ----------- */
-
-    .slide-content{
-        margin: 0 55px;
-        overflow: hidden;
-        border-radius: 25px;
-    }
-
-    .card-title{
-        font-size: 22px;
-        text-align: center;
-        
-    }
-    
-    .card-text{
-        font-size: 15px;
-    }
-    
-    #contacto h2{
-        font-size: 35px;
-    }
-    #contacto h3{
-        font-size: 25px;
-    }
-
-    .formulario p label{
-        font-size: 25px;
-    }
-
-    .formulario{
-        width: 1000px;
-        height: 750px;
-    }
-    
-    .formulario p label input{
-        width: 950px;
-        height: 60px;
-    }
-    
-    .formulario p label textarea{
-        width: 950px;
-        height: 250px;
-    }
-
-}
