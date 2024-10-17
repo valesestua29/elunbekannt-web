@@ -51,6 +51,12 @@ header{
     padding: 5px;
 }
 
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .nav-bar{
     list-style-type: none;
     display: flex;
@@ -165,6 +171,17 @@ body{
     margin: 10px 40px 10px 40px;
 }
 
+.box-stream-video {
+    height:400px; 
+    width: 41rem;
+}
+
+.box-stream-chat{
+    height:25rem;
+    width:17.5rem;
+}
+
+
 
 
 /* ---- EVENTOS ---- */
@@ -221,7 +238,7 @@ body{
     height: 100%;
     width: 100%;
     background-color: #9b3df0;
-    border-radius: 1.5625rem 1.5625rem 0 1.5625rem ;
+    border-radius: 1.5625rem 1.5625rem 0 0 ;
 }
 
 .overlay::before,
@@ -232,14 +249,13 @@ body{
     bottom: -2.5rem;
     height: 2.5rem;
     width: 2.5rem;
-    background-color: #9b3df0;
+    
 }
 
 .overlay::after{
     border-radius: 0 1.5625rem 0 0;
-    background-color: #FFFFFF;
+    
 }
-
 
 .card-image{
     position: relative;
@@ -306,6 +322,16 @@ body{
     background-color: #4e296e;
 }
 
+@media screen and (max-width: 768px){
+    
+    .slide-content{
+        margin: 0 10px;
+    }
+    .swiper-navBtn{
+        display: none;
+    }
+
+}
 
 /* ---- FORMULARIO ---- */
 
@@ -377,3 +403,128 @@ body{
     font-size: 15px;
     text-decoration: none;
 }
+
+
+
+
+@media (max-width: 425px){
+
+    .logo1{
+        margin-left: 25px;
+    }
+
+    .abrir-menu,
+    .cerrar-menu{
+        display: block;
+        margin-left: 50px;
+        padding: 5px;
+        border: 0;
+        font-size: 40px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .nav{
+        display: flex;
+        visibility: hidden;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #9b3df0;
+        box-shadow: #4e296e7a;
+    }
+
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-bar li{
+        padding: 15px;
+    }
+
+    .iconos-redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+        justify-content: center; /* Centra los iconos horizontalmente */
+        gap: 10px; /* Controla el espacio entre los iconos */
+        align-items: center; 
+    }
+
+    .iconos-redes a img{
+        width: 40px;
+        
+    }
+
+
+    /* ------ FOOTER ------- */ 
+    footer{
+        background-color: #9b3df0;
+        padding: 5px;
+    }
+
+
+    /* ------ INICIO ------- */ 
+
+    .info-principal{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-principal div{
+        margin-top: 150px; 
+        margin-left: 10px;
+    }
+    
+    .logo-principal{
+        width: 300px;
+    }
+
+    .info-principal div h1 {
+        font-size: 18px;
+    }
+
+    .info-principal div h2{
+        font-weight: 200;
+    }
+
+    .foto-persona{
+        margin: 20px;
+        width: 300px;
+    }
+
+
+    /* ------ STREAM ------- */ 
+
+    .stream-video{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .box-stream-video {
+        height: 170,73px; 
+        width: 280px;
+    }
+    
+    .box-stream-chat{
+        height: 300px;
+        width: 280
+    }
+
+
+}
+

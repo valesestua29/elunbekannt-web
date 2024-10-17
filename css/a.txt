@@ -1,0 +1,48 @@
+.abrir-menu,
+    .cerrar-menu{
+        display: block;
+        padding: 5px;
+        border: 0;
+        font-size: 40px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        
+        padding: .625rem;
+        box-shadow: 0 0 0 100vmax black;
+        
+    }
+
+    .iconos-redes{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .iconos-redes a img{
+        width: 40px;
+    }
+
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .nav-bar li {
+        padding: 5px;
+        margin: 0 0 10px 0;
+    }
